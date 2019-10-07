@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+s
+            h1{
+                color: white;
+                font-family: cursive;
+               
+            }
+            body{
+                background-color: rgb(119, 187, 250);
+            }
+            nav{
+                background-color:rgb(7, 138, 224);
+            }
+            section{
+                
+                background: rgb(170, 129, 129);
+            }
+            footer{
+                background-color: rgb(18, 157, 199);
+                color: white;
+                
+            }
+    
+        </style>
+    
+</head>
+   
+    <body>
+               
+       
+                
+                <nav>
+                    <h2>TCP/IP</h2>
+                    <ul>
+                        <li><a href="#">Definiciòn</a></li>
+                        <li><a href="#">Breve Historia</a></li>
+                        <li><a href="#">¿Còmo Funciona TCP/IP</a></li>
+                        <li><a href="#">Componentes de TCP/IP</a></li>
+                        <li><a href="#">CAPAS CON TCP/IP Y OSI</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <section>
+                <article>
+                    
+
+                    <h2>Definicion</h2>
+                    <p>
+
+                        Conjunto de protocolos de red en los que se basa Internet y que permiten la transmisión de datos entre redes de computadoras. En ocasiones se le denomina conjunto de protocolos TCP/IP, en referencia a los dos protocolos más importantes que la componen: Protocolo de Control de Transmisión (TCP) y Protocolo de Internet (IP), que fueron los dos primeros en definirse, y que son los más utilizados de la familia. Existen tantos protocolos en este conjunto que llegan a ser más de 100 diferentes, entre ellos se encuentra el popular HTTP (HyperText Transfer Protocol), que es el que se utiliza para acceder a las páginas web, además de otros como el ARP (Address Resolution Protocol) para la resolución de direcciones, el FTP (File Transfer Protocol) para transferencia de archivos, y el SMTP (Simple Mail Transfer Protocol) y el POP (Post Office Protocol) para correo electrónico, TELNET para acceder a equipos remotos, entre otros.
+                        
+                        El TCP/IP es la base de Internet, y sirve para enlazar computadoras que utilizan diferentes sistemas operativos, incluyendo PC, minicomputadoras y computadoras centrales sobre redes de área local (LAN) y área extensa (WAN).</p>
+                   
+                </article>
+                <aside>
+                    <h1>Breve Historia</h1>
+                    <p>El modelo TCP/IP es una descripción de protocolos de red desarrollado por Vinton Cerf y Robert E. Kahn, en la década de 1970. Fue implantado en la red ARPANET, la primera red de área amplia, desarrollada por encargo de DARPA, una agencia del Departamento de Defensa de los Estados Unidos, y predecesora de Internet. A principios de los años 60, varios investigadores intentaban encontrar una forma de compartir recursos informáticos de una forma más eficiente. En 1961, Leonard Klienrock introduce el concepto de Comutación de Paquetes (Packet Switching, en inglés). La idea era que la comunicación entre ordenadores fuese dividida en paquetes. Cada paquete debería contener la dirección de destino y podría encontrar su propio camino a través de la red.
+
+                        En 1969 la Agencia de Proyectos de Investigación Avanzada (Defense Advanced Research Projects o DARPA) del ejercito de los EEUU desarrolla la ARPANET. La finalidad principal de esta red era la capacidad de resistir un ataque nuclear de la URSS para lo que se pensó en una administración descentralizada. De este modo, si algunos ordenadores eran destruidos, la red seguiría funcionando. Aunque dicha red funcionaba bien, estaba sujeta a algunas caídas periódicas de sistema. De este modo, la expansión a largo plazo de esta red podría resultar difícil y costosa. Se inició entonces una busqueda de un conjunto de protocolos más fiables para la misma. Dicha búsqueda finalizó a mediados de los 70, con el desarrollo de TCP/IP.
+                        
+                        En la actualidad, TCP/IP se usa para muchos propósitos, no solo en Internet. Por ejemplo, a menudo se diseñan intranets usando TCP/IP. En tales entornos, TCP/IP ofrece ventajas significativas sobre otros protocolos de red. Una de tales ventajas es que trabaja sobre una gran variedad de hardware y sistemas operativos. De este modo puede crearse fácilmente una red heterogénea usando este protocolo. Dicha red puede contener estaciones Mac, PC complatibles, estaciones Sun, servidores Novell, etc. Todos estos elementos pueden comunicarse usando la misma suite de protocolos TCP/IP. La siguiente tabla muestra una lista de plataformas que soportan TCP/IP</p>
+
+                    
+                </aside>
+            </section>
+            <article>
+                <h2>¿Como Funciona?</h2>
+                <p>TCP/IP opera a través del uso de una pila. Dicha pila es la suma total de todos los protocolos necesarios para completar una transferencia de datos entre dos máquinas (así como el camino que siguen los datos para dejar una maquina o entrar en la otra). La pila esta dividida en capas, como se ilustra en la figura siguiente:
+
+                    Equipo Servidor o Cliente
+                    
+                    Capa de aplicación
+                    
+                    Cuando un usuario inicia una transferencia de datos, esta capa pasa la solicitud a la capa de Transporte.
+                    
+                    Capa de Transporte
+                    
+                    La capa de Transporte añade una cabecera y pasa los datos a la Capa de Red
+                    
+                    Capa de Red
+                    
+                    En la Capa de Red, se añaden las direcciones IP de origen y destino para el enmutamiento de datos
+                    
+                    Capa de Enlace de Datos
+                    
+                    Ejecuta un control de errores sobre el flujo de datos entre los protocolos anteriores la capa Fisica
+                    
+                    Capa Fisica
+                    
+                    Ingresa o egresa los datos a traves del medio fisico, que puede ser Ethernet via coaxial, PPP via modem, etc.
+                    
+                    para mayor conocimiento de como funciona el modelo, vea el video.</p>
+            </article>
+            <section>
+                <article>
+                    <h2>Componentes de TCP/IP</h2>
+                    <p>Conjunto de Protocolos TCP/IP :
+
+
+                        Todos estos servicios conforman TCP/IP, creando un protocolo potente y eficaz de red. Los diferentes protocolos dentro de TCP/IP se mantienen de forma regular por un conjunto de estándares que son parte de la organización de Internet.
+                        
+                        Los protocolos de transporte controlan el movimiento de datos entre dos maquinas.
+                        
+                        
+                        « TCP (Transmission Control Protocol). Protocolo de Control de Transmisión. Un servicio basado en una conexión, lo que significa que las máquinas que envían y reciben datos están conectadas y se comunican entre ellas en todo momento.
+                        
+                        
+                        « UDP (User Datagram Protocol). Protocolo de Datagramas a nivel de Usuario. Un servicio sin conexión, lo que significa que los datos se envían o reciben estén en contacto entre ellas.
+                        
+                        
+
+
+                        Los protocolos de rutas gestionan el direccionamiento de los datos y determinan el mejor medio de llegar la destino. También pueden gestionar la forma en que se dividen los mensajes extensos y se vuelven a unir en el destino.
+                        
+                        « IP (Internet Protocol). Protocolo de Internet. Gestiona la transmisión actual de datos.
+                        
+                        « ICMP (Internet Control Message Protocol). Protocolo de Control de Mensajes de Internet. Gestiona los mensajes de estado para IP, como errores o cambios en el hardware de red que afecten a las rutas.
+                        
+                        « RIP (Routing Information Protocol). Protocolo de Información de Rutas. Uno de los varios protocolos que determinan el mejor método de ruta para entregar un mensaje.
+                        
+                        « OSPF (Open Shortest Path First). Abre Primero el Path Mas Corto. Un protocolo alternativo para determinar la ruta.
+                        
+                        Las direcciones de red las gestionan servicios y es el medio por el que se identifican las maquinas, tanto por su nombre y número único.
+                        
+                        « ARP (Address Resolution Protocol). Protocolo de Resolución de Direcciones. Determina las direcciones numéricas únicas de las máquinas en la red.
+                        
+                        « DNS (Domain Name System). Sistema de Nombres de Dominio. Determina las direcciones numéricas desde los nombres de máquinas.
+                        
+                        « RARP (Reverse Address Resolution Protocol). Protocolo de Resolución Inversa de Direcciones. Determina las direcciones de las máquinas en la red, pero en sentido inverso al de ARP.
+                        
+                        Los servicios de usuario son las aplicaciones que un usuario (o maquina) pueden utilizar.
+                        
+                        
+                        « BOOTP (Boot Protocol). Protocolo de Arranque, como su propio nombre lo indica, inicializa una máquina de red al leer la información de arranque de un servidor.
+                        
+                        
+                        « FTP (File Transfer Protocol), el Protocolo de Transferencia de Ficheros transfiere ficheros de una máquina a otra.
+                        
+                        
+                        « TELNET permite accesos remotos, lo que significa que un usuario en una máquina puede conectarse a otra y comportarse como si estuviera sentado delante del teclado de la máquina remota.
+                        
+                        
+                        Los protocolos de pasarela ayudan a que la red comunique información de ruta y estado además de gestionar datos para redes locales.
+                        
+                        
+                        «EGP (Exterior Gateway Protocol). Protocolo de Pasarela Externo, transfiere información de ruta para redes externas.
+                        
+                        
+                        « GGP (Gateway-to-Gateway Protocol).Protocolo de Pasarela a pasarela, transfiere información de ruta entre pasarelas.
+                        
+                        
+                        « IGP (Interior Gateway Protocol). Protocolo de Pasarela Interno, transfiere información de ruta para redes internas.
+                        
+                        
+                        Los otros protocolos son servicios que no se adaptan a las categorías, pero proporcionan servicios importantes en una red.
+                        
+                        « NFS (Network File System). Sistema de Ficheros de Red, permite que los directorios en una máquina se monten en otra y que un usuario puede acceder a ellos como si estos se encontraran en la máquina local.
+                        
+                        « NIS (Network Information Service). Servicio de Información de Red, mantiene las cuentas de usuario en todas las redes, simplificando el mantenimiento de los logins y passwords.
+                        
+                        « RPC (Remote Procedure Call). Llamada de Procedimiento Remota, permite que aplicaciones remotas se comuniquen entre ellas de una manera sencilla y eficaz.
+                        
+                        « SMTP (Simple Mail Transfer Protocol).Protocolo Simple de Transferencia de Correo, es un protocolo dedicado que transfiere correo electrónico entre máquinas.
+                        
+                        « SNMP (Simple Network Management Protocol). Protocol Simple de Gestión de Redes, es un servicio del administrador que envía mensajes de estado sobre la red y los dispositivos unidos a ésta.</p>
+                </article>
+            </section>
+            
+            <footer>
+                <NAV>
+                    <h2>Capas de TCP/IP</h2>
+                </NAV>
+                    <p>
+
+                            Para visualizar la interacción entre varios protocolos, es común utilizar un modelo en capas. Este modelo describe el funcionamiento de los protocolos que se produce en cada capa y la interacción con las capas que se encuentran por encima y por debajo de ellas.
+                        
+                           Hay beneficios por el uso de un modelo en capas para describir protocolos de red y operaciones. Uso de un modelo en capas:
+                        
+                            Ayuda en el diseño de protocolos, ya que los protocolos que operan en una capa específica tienen información definida según la cual actúan, y una interfaz definida para las capas superiores e inferiores.
+                            Fomenta la competencia, ya que los productos de distintos proveedores pueden trabajar en conjunto.
+                            Evita que los cambios en la tecnología o en las capacidades de una capa afecten otras capas superiores e inferiores.
+                            Proporciona un lenguaje común para describir las funciones y capacidades de networking.
+                        </p>
+         
+                </div>
+                
+            </footer>
+        </div>
+    </body>
+</html>
+<body>
+    
+</body>
+</html>
